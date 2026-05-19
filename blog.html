@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Blog | Sergii Prykhodko</title>
+  <meta name="description" content="Read articles on the latest AI news, autonomous agents, modern tooling, and step-by-step developer tutorials.">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <span>SP</span>.dev
+      </a>
+      <button class="mobile-nav-toggle" aria-label="Toggle navigation" id="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html#home" class="nav-link">Home</a></li>
+        <li><a href="index.html#projects" class="nav-link">Projects</a></li>
+        <li><a href="blog.html" class="nav-link active">AI Blog</a></li>
+        <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- BLOG HERO -->
+  <section class="blog-hero">
+    <div class="container">
+      <div class="section-tag" style="display: block; margin: 0 auto 0.75rem;">Thoughts & Insights</div>
+      <h1 style="font-size: 3.5rem; margin-bottom: 1rem;"><span class="text-gradient">The AI Chronicles</span></h1>
+      <p style="color: var(--text-secondary); max-width: 600px; margin: 0 auto 2.5rem;">
+        Exploring the frontier of artificial intelligence, agentic workflows, LLM tuning, and local computing structures.
+      </p>
+
+      <!-- Search and Filter Bar -->
+      <div class="blog-filters-container">
+        <div class="search-bar-wrap">
+          <i data-lucide="search" class="search-icon"></i>
+          <input type="text" id="search-input" class="search-input" placeholder="Search posts by title, summary or tags...">
+        </div>
+        <div class="category-pills" id="category-pills">
+          <button class="category-pill active" data-category="all">All Topics</button>
+          <button class="category-pill" data-category="AI News">AI News</button>
+          <button class="category-pill" data-category="AI Tooling">AI Tooling</button>
+          <button class="category-pill" data-category="Tutorials">Tutorials</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG GRID -->
+  <section class="blog-grid-section">
+    <div class="container">
+      <div class="grid grid-3" id="blog-posts-grid">
+        <!-- Injected via blog.js -->
+        <div class="card shimmer" style="height: 380px;"></div>
+        <div class="card shimmer" style="height: 380px;"></div>
+        <div class="card shimmer" style="height: 380px;"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-logo"><span>SP</span>.dev</div>
+      <ul class="footer-socials">
+        <li><a href="https://github.com/JimmyUA" target="_blank" aria-label="GitHub"><i data-lucide="github"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/sergii-prykhodko-2b35b286/" target="_blank" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a></li>
+        <li><a href="https://x.com/jimmy20950647" target="_blank" aria-label="Twitter/X"><i data-lucide="twitter"></i></a></li>
+      </ul>
+      <p class="footer-copy">&copy; 2026 Sergii Prykhodko. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="blog-data.js"></script>
+  <script src="blog.js"></script>
+  <script src="app.js"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>

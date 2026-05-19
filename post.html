@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Post | Sergii Prykhodko</title>
+  <meta name="description" content="AI Blog post. Insights into engineering, neural architectures, development, and tutorials.">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Prism.js Dark Theme for beautiful code syntax highlighting -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <span>SP</span>.dev
+      </a>
+      <button class="mobile-nav-toggle" aria-label="Toggle navigation" id="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html#home" class="nav-link">Home</a></li>
+        <li><a href="index.html#projects" class="nav-link">Projects</a></li>
+        <li><a href="blog.html" class="nav-link active">AI Blog</a></li>
+        <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- POST HERO SECTION (Loaded dynamically) -->
+  <section class="post-hero">
+    <div class="container">
+      <a href="blog.html" class="post-back-btn">
+        <i data-lucide="arrow-left"></i> Back to Blog
+      </a>
+      
+      <div class="post-header" id="post-header-container">
+        <!-- Dynmically loaded content: title, meta, author -->
+        <div class="shimmer" style="height: 20px; width: 150px; margin-bottom: 1rem; border-radius: 4px;"></div>
+        <div class="shimmer" style="height: 50px; width: 100%; margin-bottom: 1.5rem; border-radius: 4px;"></div>
+        <div style="display: flex; gap: 1rem; align-items: center;">
+          <div class="shimmer" style="height: 48px; width: 48px; border-radius: 50%;"></div>
+          <div>
+            <div class="shimmer" style="height: 15px; width: 120px; margin-bottom: 0.5rem; border-radius: 4px;"></div>
+            <div class="shimmer" style="height: 12px; width: 180px; border-radius: 4px;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- POST WRAPPER -->
+  <div class="container">
+    <!-- Dynamic Cover Image -->
+    <div class="post-cover-wrap" id="post-cover-container">
+      <div class="shimmer" style="height: 400px; width: 100%;"></div>
+    </div>
+    
+    <!-- Dynamic Content -->
+    <main class="post-container">
+      <article class="post-content" id="post-content-container">
+        <div class="shimmer" style="height: 20px; margin-bottom: 1rem; border-radius: 4px;"></div>
+        <div class="shimmer" style="height: 20px; margin-bottom: 1rem; border-radius: 4px;"></div>
+        <div class="shimmer" style="height: 20px; margin-bottom: 1rem; border-radius: 4px;"></div>
+        <div class="shimmer" style="height: 20px; margin-bottom: 1rem; border-radius: 4px;"></div>
+        <div class="shimmer" style="height: 20px; margin-bottom: 1rem; border-radius: 4px;"></div>
+      </article>
+    </main>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-logo"><span>SP</span>.dev</div>
+      <ul class="footer-socials">
+        <li><a href="https://github.com/JimmyUA" target="_blank" aria-label="GitHub"><i data-lucide="github"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/sergii-prykhodko-2b35b286/" target="_blank" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a></li>
+        <li><a href="https://x.com/jimmy20950647" target="_blank" aria-label="Twitter/X"><i data-lucide="twitter"></i></a></li>
+      </ul>
+      <p class="footer-copy">&copy; 2026 Sergii Prykhodko. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="blog-data.js"></script>
+  <script src="blog.js"></script>
+  <script src="app.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
+  <script>
+    lucide.createIcons();
+    
+    // Parse query param and load single post
+    window.addEventListener('DOMContentLoaded', () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const postId = urlParams.get('id');
+      
+      if (typeof loadSinglePost === 'function') {
+        loadSinglePost(postId);
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sergii Prykhodko | Software Engineer & AI Enthusiast</title>
+  <meta name="description" content="Personal website of Sergii Prykhodko, Software Engineer and AI Enthusiast. Featuring articles on AI agents, tooling, and local LLMs.">
+  <link rel="stylesheet" href="style.css">
+  <!-- Lucide Icons for high-quality clean SVGs -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- HEADER / NAVIGATION -->
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <span>SP</span>.dev
+      </a>
+      <button class="mobile-nav-toggle" aria-label="Toggle navigation" id="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html#home" class="nav-link active">Home</a></li>
+        <li><a href="index.html#projects" class="nav-link">Projects</a></li>
+        <li><a href="blog.html" class="nav-link">AI Blog</a></li>
+        <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="home">
+    <div class="container hero-content">
+      <div class="hero-subtitle">Software Engineer & AI Enthusiast</div>
+      <h1 class="hero-title">Engineering the Future with <span class="text-gradient">Autonomous AI Systems</span></h1>
+      <p class="hero-description">
+        Hi, I'm Sergii Prykhodko. I design and build high-performance software applications and explore the boundaries of AI agent workflows, tooling, and local language models. Welcome to my digital space.
+      </p>
+      <div class="cta-group">
+        <a href="blog.html" class="btn btn-primary">Read AI Blog <i data-lucide="arrow-right"></i></a>
+        <a href="#projects" class="btn btn-secondary">View Projects</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-header-left">
+          <span class="section-tag">Portfolio</span>
+          <h2>Featured Engineering Projects</h2>
+        </div>
+      </div>
+      <div class="grid grid-2">
+        <!-- Project 1 -->
+        <div class="card project-card">
+          <div class="project-icon">
+            <i data-lucide="sparkles"></i>
+          </div>
+          <h3 class="project-title">Kahoot Quiz Generator</h3>
+          <p class="project-desc">An AI-powered generator that creates fun, interactive Kahoot quizzes automatically based on text documents or articles using LLM APIs.</p>
+          <div class="project-links">
+            <a href="https://quiz.sergiiprykhodko.com" target="_blank" class="project-link">Live App <i data-lucide="external-link"></i></a>
+          </div>
+        </div>
+        <!-- Project 2 -->
+        <div class="card project-card">
+          <div class="project-icon">
+            <i data-lucide="gamepad-2"></i>
+          </div>
+          <h3 class="project-title">Moonrobots NFT Game</h3>
+          <p class="project-desc">A play-to-earn strategic role-playing NFT game built on blockchain technology featuring unique, collectable robotic designs.</p>
+          <div class="project-links">
+            <a href="https://www.reddit.com/r/MoonRobots/" target="_blank" class="project-link">Community <i data-lucide="external-link"></i></a>
+          </div>
+        </div>
+        <!-- Project 3 -->
+        <div class="card project-card">
+          <div class="project-icon">
+            <i data-lucide="message-square"></i>
+          </div>
+          <h3 class="project-title">Chat with My CV</h3>
+          <p class="project-desc">An interactive, conversational CV agent enabling visitors to ask questions about my professional experience, skills, and background in real-time.</p>
+          <div class="project-links">
+            <a href="https://github.com/JimmyUA" target="_blank" class="project-link">GitHub <i data-lucide="external-link"></i></a>
+          </div>
+        </div>
+        <!-- Project 4 -->
+        <div class="card project-card">
+          <div class="project-icon">
+            <i data-lucide="smartphone"></i>
+          </div>
+          <h3 class="project-title">Fitstagram</h3>
+          <p class="project-desc">A prototype mobile application combining fitness tracking, social sharing, and AI-driven personalized health recommendations.</p>
+          <div class="project-links">
+            <a href="https://github.com/JimmyUA" target="_blank" class="project-link">GitHub <i data-lucide="external-link"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RECENT BLOG POSTS -->
+  <section class="section recent-posts" id="recent-posts">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-header-left">
+          <span class="section-tag">Latest Updates</span>
+          <h2>From the AI Blog</h2>
+        </div>
+        <a href="blog.html" class="btn btn-secondary">View All Posts <i data-lucide="arrow-right"></i></a>
+      </div>
+      
+      <!-- Recent blog cards dynamic list -->
+      <div class="grid grid-3" id="recent-blog-grid">
+        <!-- Injected via app.js -->
+        <div class="card shimmer" style="height: 350px;"></div>
+        <div class="card shimmer" style="height: 350px;"></div>
+        <div class="card shimmer" style="height: 350px;"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="section" id="contact" style="border-top: 1px solid var(--border-glass);">
+    <div class="container" style="max-width: 600px; text-align: center;">
+      <span class="section-tag">Let's Connect</span>
+      <h2 style="margin-bottom: 1.5rem;">Get in Touch</h2>
+      <p style="color: var(--text-secondary); margin-bottom: 2.5rem;">
+        Interested in AI Agent automation, local LLMs, or software engineering collaboration? Drop me a message or connect with me on social platforms.
+      </p>
+      <a href="mailto:sergii.prykhodko@gmail.com" class="btn btn-primary">Send Email <i data-lucide="mail"></i></a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-logo"><span>SP</span>.dev</div>
+      <ul class="footer-socials">
+        <li><a href="https://github.com/JimmyUA" target="_blank" aria-label="GitHub"><i data-lucide="github"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/sergii-prykhodko-2b35b286/" target="_blank" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a></li>
+        <li><a href="https://x.com/jimmy20950647" target="_blank" aria-label="Twitter/X"><i data-lucide="twitter"></i></a></li>
+      </ul>
+      <p class="footer-copy">&copy; 2026 Sergii Prykhodko. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="blog-data.js"></script>
+  <script src="app.js"></script>
+  <script>
+    // Initialize icons
+    lucide.createIcons();
+  </script>
+</body>
+</html>
