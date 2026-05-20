@@ -1,5 +1,61 @@
 const BLOG_POSTS = [
   {
+    id: "google-io-2026-agentic-era",
+    title: "Google I/O 2026: Entering the Agentic Era with Google Antigravity and Gemini 3.5",
+    summary: "A deep dive into Google I/O 2026's biggest developer announcements, from the game-changing Google Antigravity agent platform and Gemini 3.5 Flash, to the rise of offline agentic workflows.",
+    category: "AI News",
+    tags: ["Google IO", "Google Antigravity", "Gemini 3.5", "AI Agents", "Agentic Workflows"],
+    date: "May 20, 2026",
+    readTime: "7 min read",
+    coverImage: "assets/google_io_2026.png",
+    author: {
+      name: "Sergii Prykhodko",
+      title: "Software Engineer & AI Enthusiast",
+      avatar: "assets/avatar.png"
+    },
+    content: `
+      <p>The tech world has just witnessed a seismic shift in software development paradigms. At yesterday's Google I/O 2026 keynote, the central theme was clear: we are transitioning rapidly from basic assistive AI to fully autonomous <strong>agentic workflows</strong>. Instead of just helping developers write lines of code, AI is now capable of navigating complex, multi-step engineering tasks independently.</p>
+      
+      <p>During the keynote, Google DeepMind CEO Demis Hassabis declared that Artificial General Intelligence (AGI) is on the horizon, stating that we are currently standing in the "foothills of the singularity." In this article, we'll break down the key announcements that will redefine the developer ecosystem over the coming year.</p>
+      
+      <h2>1. The Gemini 3.5 Model Family & Gemma 4</h2>
+      <p>Google introduced its next-generation models optimized specifically for agentic execution and speed:</p>
+      <ul>
+        <li><strong>Gemini 3.5 Flash:</strong> Now the default model for Google Search AI Mode and the Gemini app. It is four times faster in output tokens per second (TPS) than other frontier models, and is engineered specifically to serve as the fast, cost-effective router for agentic tool use and vibe coding workflows.</li>
+        <li><strong>Gemma 4:</strong> The latest iteration of Google's open-source model family. Gemma 4 is custom-tailored for advanced on-device reasoning, enabling developers to run complex agentic loops offline without paying API token costs.</li>
+      </ul>
+      
+      <h2>2. Google Antigravity: The Agent-First Platform</h2>
+      <p>The star of the Developer Keynote was undoubtedly <strong>Google Antigravity</strong>. Rather than forcing developers to stitch together custom code sandboxes and run commands manually, Antigravity provides a unified, hardened SDK and infrastructure package to run agents at scale.</p>
+      
+      <blockquote>
+        "Google Antigravity represents the shift from code generation to workflow automation. It is a sandbox-native runtime where agents can safely execute, test, and correct code."
+      </blockquote>
+      
+      <p>The platform consists of several key components:</p>
+      <ul>
+        <li><strong>Antigravity 2.0:</strong> A standalone desktop application acting as a central dashboard to visualize and coordinate fleets of agents running in parallel.</li>
+        <li><strong>Antigravity SDK & CLI:</strong> A lightweight program library and command-line tool allowing developers to create agents with built-in credential masking, secure terminal sandboxing, and strict Git merge policies.</li>
+        <li><strong>Managed Agents in Gemini API:</strong> With a single API call, developers can spawn a fully provisioned agent paired with a remote, secure Linux container. The agent manages its own environment, installs dependencies, and resolves the specified goal dynamically.</li>
+      </ul>
+      
+      <h2>3. Deep Integrations: Android Studio, Firebase, and Chrome DevTools</h2>
+      <p>Google has also integrated its agentic tooling into developer systems we use daily:</p>
+      <ol>
+        <li><strong>Agentic Android Studio:</strong> The new IDE features native support for Kotlin code generation and automated migrations. Developers can run the new <em>Android Bench</em> suite to evaluate their app's performance.</li>
+        <li><strong>Firebase Integration:</strong> One-click setup connects your Antigravity agent directly to Firebase databases and cloud functions, allowing agents to write, deploy, and verify serverless backends automatically.</li>
+        <li><strong>Chrome DevTools for Agents:</strong> A visual debugger built specifically for auditing web-browsing agents. Developers can watch agents navigate browser pages, inspect the DOM modifications, trace network requests, and audit security compliance in real-time.</li>
+      </ol>
+      
+      <h2>4. The Rise of "Vibe Coding" and Developer Productivity</h2>
+      <p>With tools like Antigravity, the barrier to building complex software has lowered dramatically. Developers are no longer restricted to writing syntax; they are orchestrating fleets of agents. Through "vibe coding"—rapidly prototyping using AI instructions and natural language—developers are building entire systems in hours instead of weeks.</p>
+      
+      <p>As Hassabis noted, these advances act as a force multiplier for human ingenuity. By delegating boilerplate, testing, and deployment loops to autonomous agents, engineers can spend their time on system architecture, creative product design, and solving hard computational problems.</p>
+      
+      <p>The agentic era is no longer a future concept—it is officially here. How are you planning to leverage Google Antigravity in your next project? Let me know in the comments below!</p>
+    `
+  },
+  {
     id: "autonomous-engineers-rise",
     title: "The Rise of Autonomous Software Engineers: Myth or Reality?",
     summary: "An in-depth analysis of recent AI news surrounding autonomous software engineering agents, evaluating their capabilities, limitations, and the future of human-AI collaboration in development.",
